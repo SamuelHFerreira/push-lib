@@ -2,9 +2,7 @@ Pod::Spec.new do |s|
   s.name             = "PushLib"
   s.version          = "0.0.1"
   s.summary          = "PushLib, Objective-C library to use the Zup Push Platform"
-
-  s.description      = "Objective-C library to use the Zup Push Platform, that can be applied just by using pod install"
-
+  s.description      = "Objective-C library to use the Zup Push Platform integration, by using pod install and calling the sdk passing the needed data."
   s.homepage         = "https://github.com/SamuelHFerreira/push-lib"
   s.license          = 'MIT'
   s.author           = { "samuel.ferreira" => "samuel.ferreira@zup.com.br" }
@@ -16,5 +14,4 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'PushLib' => ['PushLib/Assets/*.png']
   }
-
 end
