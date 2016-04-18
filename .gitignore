@@ -1,0 +1,25 @@
+.xcworkspace
+*.pyc
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+../.DS_Store
+*.DS_Store
+*../.DS_Store
+/build
+/captures
+xcuserdata/
+
+#pod libs
+Example/build/
+Example/Pods/
+
+# Generated files
+bin/
+gen/
+
+# Log Files
+*.log
+
