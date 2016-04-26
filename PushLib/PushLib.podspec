@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "PushLib"
-s.version          = "0.0.1"
+s.version          = "0.0.2"
 s.summary          = "PushLib, Objective-C library to use the Zup Push Platform"
 s.description      = "Objective-C library to use the Zup Push Platform integration, by using pod install and calling the sdk passing the needed data."
 s.homepage         = "https://github.com/SamuelHFerreira/push-lib"
@@ -16,4 +16,6 @@ s.resource_bundles = {
 }
 
 s.dependency 'AFNetworking', '~> 2.6.3'
+s.dependency 'OCMapper', '2.1'
+
 end
