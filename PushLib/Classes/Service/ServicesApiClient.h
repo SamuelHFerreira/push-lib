@@ -6,7 +6,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AFURLRequestSerialization.h"
+#import "AFURLResponseSerialization.h"
+#import "AFSecurityPolicy.h"
+#import "AFNetworkReachabilityManager.h"
+
+#import "AFURLConnectionOperation.h"
+#import "AFHTTPRequestOperation.h"
 #import "AFHTTPRequestOperationManager.h"
+
 #import "ServiceWrap.h"
 
 FOUNDATION_EXTERN NSString *const kNoRequestLeftNotification;

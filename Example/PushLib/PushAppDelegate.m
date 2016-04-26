@@ -7,6 +7,7 @@
 //
 
 #import "PushAppDelegate.h"
+#import "PushLib/PushManager.h"
 
 @implementation PushAppDelegate
 
@@ -41,6 +42,17 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    [PushManager sharedInstance:[PushClientData pushClientDataWithBlock:^(PushClientDataBuilder *clientDataBuilder) {
+        clientDataBuilder.apnsToken = @"apnstokenTest";
+        clientDataBuilder.userId = @"11999950000";
+        clientDataBuilder.pushDomainUrl = @"https://realwave.gateway.zup.me/push/v1";
+        clientDataBuilder.applicationKey = @"568930a0b9580133a30b021e75abe44c";
+    }]];
+    [[PushManager sharedInstance] setApnsPushNotificationIdentifier:deviceToken];
 }
 
 @end

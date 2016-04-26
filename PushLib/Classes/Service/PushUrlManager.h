@@ -10,10 +10,13 @@
 
 @interface PushUrlManager : NSObject
 
+@property (strong) NSString *baseUrl;
+
 -(instancetype) initWithUrl:(NSString*) urlString;
 
 -(NSString*) pushSubscribeUrlString;
 -(NSString*) pushUnSubscribeUrlString:(NSString*) userId;
 -(NSString*) pushStatusUrlString;
+
 
 @end

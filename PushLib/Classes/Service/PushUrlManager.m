@@ -12,12 +12,6 @@ static NSString *const SUBSCRIBE_FOR_PUSH_URL = @"/subscriptions";
 static NSString *const UNSUBSCRIBE_FOR_PUSH_URL = @"/subscriptions/{userId}";
 static NSString *const PUSH_STATUS_URL = @"/status";
 
-@interface PushUrlManager ()
-
-@property (strong) NSString *baseUrl;
-
-@end
-
 @implementation PushUrlManager
 
 -(instancetype) initWithUrl:(NSString*) urlString {
