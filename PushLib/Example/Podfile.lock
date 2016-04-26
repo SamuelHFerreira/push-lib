@@ -1,0 +1,41 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - OCMapper (2.1)
+  - PushLib (0.0.1):
+    - AFNetworking (~> 2.6.3)
+
+DEPENDENCIES:
+  - AFNetworking (= 2.6.3)
+  - OCMapper (= 2.1)
+  - PushLib (from `../`)
+
+EXTERNAL SOURCES:
+  PushLib:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  OCMapper: fa22e7b51de7cc38e66b993037076d28a0f31b29
+  PushLib: b030c0e331d5e1f8cf0018f040892ee81ccb20db
+
+COCOAPODS: 0.39.0

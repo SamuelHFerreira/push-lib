@@ -1,0 +1,6 @@
+framework module PushLib {
+  umbrella header "PushLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

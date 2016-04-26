@@ -1,0 +1,29 @@
+{
+  "name": "PushLib",
+  "version": "0.0.1",
+  "summary": "PushLib, Objective-C library to use the Zup Push Platform",
+  "description": "Objective-C library to use the Zup Push Platform integration, by using pod install and calling the sdk passing the needed data.",
+  "homepage": "https://github.com/SamuelHFerreira/push-lib",
+  "license": "MIT",
+  "authors": {
+    "samuel.ferreira": "samuel.ferreira@zup.com.br"
+  },
+  "source": {
+    "git": "https://github.com/SamuelHFerreira/push-lib.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source_files": "PushLib/Classes/**/*",
+  "resource_bundles": {
+    "PushLib": [
+      "PushLib/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.6.3"
+    ]
+  }
+}
